@@ -11,6 +11,7 @@
 namespace supercool\buttonbox;
 
 use supercool\buttonbox\fields\Stars as StarsField;
+use supercool\buttonbox\fields\Colours as ColoursField;
 
 use Craft;
 use craft\base\Plugin;
@@ -67,6 +68,7 @@ class ButtonBox extends Plugin
             Fields::EVENT_REGISTER_FIELD_TYPES,
             function (RegisterComponentTypesEvent $event) {
                 $event->types[] = StarsField::class;
+                $event->types[] = ColoursField::class;
             }
         );
 
