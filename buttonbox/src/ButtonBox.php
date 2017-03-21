@@ -14,6 +14,7 @@ use supercool\buttonbox\fields\Stars as StarsField;
 use supercool\buttonbox\fields\Colours as ColoursField;
 use supercool\buttonbox\fields\TextSize as TextSizeField;
 use supercool\buttonbox\fields\Buttons as ButtonsField;
+use supercool\buttonbox\fields\Width as WidthField;
 
 use Craft;
 use craft\base\Plugin;
@@ -73,6 +74,7 @@ class ButtonBox extends Plugin
                 $event->types[] = ColoursField::class;
                 $event->types[] = TextSizeField::class;
                 $event->types[] = ButtonsField::class;
+                $event->types[] = WidthField::class;
             }
         );
 
