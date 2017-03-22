@@ -15,6 +15,7 @@ use supercool\buttonbox\fields\Colours as ColoursField;
 use supercool\buttonbox\fields\TextSize as TextSizeField;
 use supercool\buttonbox\fields\Buttons as ButtonsField;
 use supercool\buttonbox\fields\Width as WidthField;
+use supercool\buttonbox\fields\Triggers as TriggersField;
 
 use Craft;
 use craft\base\Plugin;
@@ -75,6 +76,7 @@ class ButtonBox extends Plugin
                 $event->types[] = TextSizeField::class;
                 $event->types[] = ButtonsField::class;
                 $event->types[] = WidthField::class;
+                $event->types[] = TriggersField::class;
             }
         );
 

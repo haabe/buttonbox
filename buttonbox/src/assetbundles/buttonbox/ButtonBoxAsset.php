@@ -45,6 +45,7 @@ class ButtonBoxAsset extends AssetBundle
         // when this asset bundle is registered
         $this->js = [
             'js/buttonbox.js',
+            'js/settings-triggers.js'
         ];
 
         $this->css = [
